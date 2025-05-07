@@ -19,7 +19,9 @@ public class ListEmployeeServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         List<Employee> employees = efl.findAll();
-        
+
+        request.setAttribute("employees", employees);
+                
         RequestDispatcher disp = request.getRequestDispatcher("list_employee_outcome.jsp");
         disp.forward(request, response);
     }
