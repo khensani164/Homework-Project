@@ -16,6 +16,7 @@
         <ul>
             <il><a href="add.jsp">Add Employee</a></il><br>
             <il><a href="static.jsp">List of with Employees high/acceptable temp reading</a></il>
+            <li><a href="ListEmployeeServlet.do">List Employees</a></li>
         </ul>
         <p>
              <a href="LogoutServlet.do">Log Out</a>
