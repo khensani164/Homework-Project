@@ -28,6 +28,14 @@
     <servlet-name>ListEmployeeServlet</servlet-name>
     <servlet-class>za.ac.tut.controller.ListEmployeeServlet</servlet-class>
 </servlet>
+    <servlet>
+    <servlet-name>removeEmployeeServlet</servlet-name>
+    <servlet-class>za.ac.tut.controller.removeEmployeeServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>removeEmployeeServlet</servlet-name>
+    <url-pattern>/removeEmployeeServlet.do</url-pattern>
+</servlet-mapping>
 <servlet-mapping>
     <servlet-name>ListEmployeeServlet</servlet-name>
     <url-pattern>/ListEmployeeServlet.do</url-pattern>
