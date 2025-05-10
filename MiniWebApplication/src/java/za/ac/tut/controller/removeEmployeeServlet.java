@@ -26,7 +26,7 @@ public class removeEmployeeServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-      Long employeeID = Long.parseLong(request.getParameter("employeeID"));
+      Long employeeID = Long.parseLong(request.getParameter("employeeId"));
       Employee employee = fl.find(employeeID);
       fl.remove(employee);
       request.setAttribute("employee",employee);
