@@ -42,6 +42,14 @@
         <servlet-name>LogoutServlet</servlet-name>
         <url-pattern>/LogoutServlet.do</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditEmployee</servlet-name>
+        <url-pattern>/EditEmployee.do</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    <servlet-name>EditEmployee</servlet-name>
+    <servlet-class>za.ac.tut.controller.EditEmployee</servlet-class>
+</servlet>
     <session-config>
         <session-timeout>
             30
