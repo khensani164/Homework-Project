@@ -28,16 +28,26 @@ public class EmployeeFacade extends AbstractFacade<Employee> implements Employee
         return em;
     }
 
+    public long countHighTempEmployees() {
+        return (long) em.createQuery("SELECT COUNT(e) FROM Employee e WHERE e.temperature > 37.5")
+                        .getSingleResult();
+    }
+    public long countLowTempEmployees() {
+        return (long) em.createQuery("SELECT COUNT(e) FROM Employee e WHERE e.temperature <= 37.5")
+                        .getSingleResult();
+    }
+
     public EmployeeFacade() {
         super(Employee.class);
     }
+
     @RolesAllowed("manager")
     @Override
     public List<Employee> highTemORaccebtable(String outcome) {
-      Query query = em.createQuery("SELECT e from Employee e where e.outcome =?1");
-       query.setParameter(1,outcome);
-       List<Employee> employees = query.getResultList();
+        Query query = em.createQuery("SELECT e FROM Employee e WHERE e.outcome = ?1");
+        query.setParameter(1, outcome);
+        List<Employee> employees = query.getResultList();
         return employees;
     }
-    
+
 }

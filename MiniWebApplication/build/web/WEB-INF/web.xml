@@ -12,6 +12,10 @@
         <servlet-name>LogoutServlet</servlet-name>
         <servlet-class>za.ac.tut.controller.LogoutServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>EmployeeReportServlet</servlet-name>
+        <servlet-class>za.ac.tut.controller.EmployeeReportServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddServlet</servlet-name>
         <url-pattern>/AddServlet.do</url-pattern>
@@ -20,9 +24,37 @@
         <servlet-name>ListServlet</servlet-name>
         <url-pattern>/ListServlet.do</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>ListEmployeeServlet</servlet-name>
+        <servlet-class>za.ac.tut.controller.ListEmployeeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListEmployeeServlet</servlet-name>
+        <url-pattern>/ListEmployeeServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>removeEmployeeServlet</servlet-name>
+        <servlet-class>za.ac.tut.controller.removeEmployeeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>removeEmployeeServlet</servlet-name>
+        <url-pattern>/removeEmployeeServlet.do</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>LogoutServlet</servlet-name>
         <url-pattern>/LogoutServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditEmployee</servlet-name>
+        <url-pattern>/EditEmployee.do</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>EditEmployee</servlet-name>
+        <servlet-class>za.ac.tut.controller.EditEmployee</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EmployeeReportServlet</servlet-name>
+        <url-pattern>/EmployeeReportServlet.do</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

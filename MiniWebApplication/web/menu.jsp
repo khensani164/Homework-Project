@@ -19,6 +19,7 @@
             <li> <a href="removeEmployee.jsp">Remove employee</a></li>
             <li><a href="ListEmployeeServlet.do">List Employees</a></li>
             <li><a href="editEmployee.jsp">Edit Employee</a></li>
+            <a href="EmployeeReportServlet.do">View Employee Temperature Statistics</a>
         </ul>
         <p>
              <a href="LogoutServlet.do">Log Out</a>
