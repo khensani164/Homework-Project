@@ -29,11 +29,11 @@ public class EmployeeFacade extends AbstractFacade<Employee> implements Employee
     }
 
     public long countHighTempEmployees() {
-        return (long) em.createQuery("SELECT COUNT(e) FROM Employee e WHERE e.temperature > 37.5")
+        return em.createQuery("SELECT COUNT(e) FROM Employee e WHERE e.temperature > 37.5")
                         .getSingleResult();
     }
     public long countLowTempEmployees() {
-        return (long) em.createQuery("SELECT COUNT(e) FROM Employee e WHERE e.temperature <= 37.5")
+        return em.createQuery("SELECT COUNT(e) FROM Employee e WHERE e.temperature <= 37.5")
                         .getSingleResult();
     }
 
