@@ -17,15 +17,15 @@
             <table>
                 <tr>
                     <td>Employee ID:</td>
-                    <td><input type="text" name="id"/></td>
+                    <td><input type="text" name="id" required=""/></td>
                 </tr>
                 <tr>
-                    <td>Temperature:</td>
-                    <td><input type="text" name="temp"/></td>
+                    <td>Updated Name</td>
+                    <td><input type="text" name="name" required=""/></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td><input type="submit" value="EDIT TEMP"/></td>
+                    <td><input type="submit" value="UPDATE NAME"/></td>
                 </tr>
                 
             </table>
