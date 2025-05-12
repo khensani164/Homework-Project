@@ -16,11 +16,10 @@
         <h1>Edit Employee Outcome</h1>
         <%
         Employee emp=(Employee)request.getAttribute("emp");
-        Long id=emp.getId();
-        Integer temp=emp.getTemp();
+        String name = emp.getName();
         %>
         <p>
-           The Temperature of <%=id%> was updated to <%=temp%>
+           The name was updated to <%=name%>
             
         </p>
         <p>
