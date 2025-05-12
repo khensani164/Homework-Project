@@ -18,20 +18,18 @@ public class EditEmployee extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-       
-        Long id=Long.parseLong(request.getParameter("id"));
-        Integer temp=Integer.parseInt(request.getParameter("temp"));
-        Employee emp=createEmployee(id,temp);
-        request.setAttribute("emp", emp);
-        RequestDispatcher disp=request.getRequestDispatcher("editEmployee_outcome.jsp");
-        disp.forward(request, response);
-    }
+      Long id = Long.parseLong(request.getParameter("id"));
+        Integer temp = Integer.parseInt(request.getParameter("temp"));
 
-    private Employee createEmployee(Long id, Integer temp) {
-        Employee emp=efl.find(id);
+        Employee emp = efl.find(id);
         emp.setTemp(temp);
-        return emp;
-    }
+        efl.edit(emp);
+
+        request.setAttribute("emp", emp);
+        RequestDispatcher disp = request.getRequestDispatcher("editEmployee_outcome.jsp");
+        disp.forward(request, response);
+
+            }
 
 
 }
