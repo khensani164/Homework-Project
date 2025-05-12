@@ -14,7 +14,7 @@
     <body>
         <h1>Menu</h1>
         <ul>
-            <li><a href="add.jsp">Add Employee</a></li><br>
+            <li><a href="add.jsp">Add Employee</a></li>
             <li><a href="static.jsp">List of with Employees high/acceptable temp reading</a></li>
             <li> <a href="removeEmployee.jsp">Remove employee</a></li>
             <li><a href="ListEmployeeServlet.do">List Employees</a></li>
