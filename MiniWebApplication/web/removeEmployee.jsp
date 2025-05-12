@@ -17,7 +17,7 @@
             <table>
                 <tr>
                     <td>Employee ID:</td>
-                    <td><input type="text" name="employeeId"/></td>
+                    <td><input type="text" name="employeeId" required=""/></td>
                     
                          </tr>  
                           <tr>
